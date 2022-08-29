@@ -1,0 +1,9 @@
+{
+    "image": "node:18-bullseye-slim",
+    "forwardPorts": [3000],
+    "containerUser": "node",
+    "extensions": ["esbenp.prettier-vscode", "mutantdino.resourcemonitor", "nick-rudenko.back-n-forth"],
+    "workspaceMount": "",
+    "workspaceFolder": "/workspaces/kicad_turntable_animation_generator",
+    "runArgs": ["--volume=${localWorkspaceFolder}:/workspaces/kicad_turntable_animation_generator:Z", "--userns=keep-id"]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "kicad_turntable_animation_generator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.10.2",
+    "@mui/material": "^5.10.2",
+    "@mui/x-date-pickers": "^5.0.0-beta.7",
+    "canvas-capture": "^2.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-hook-form": "^7.34.2",
+    "react-hook-form-mui": "^5.5.1",
+    "three": "^0.143.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "vite": "^3.0.7"
+  }
+}
