@@ -143,6 +143,20 @@ function AnimationCanvas(props) {
                 });
                 scene.add(vrmlScene);
                 controls.reset();
+
+                const box = new THREE.Box3().setFromObject(vrmlScene);
+                const size = box.getSize(new THREE.Vector3()).length();
+                const center = box.getCenter(new THREE.Vector3());
+                controls.maxDistance = size * 5;
+                camera.near = size / 100;
+                camera.far = size * 100;
+
+                camera.position.copy(center);
+                camera.position.z += size * 1.2;
+                camera.lookAt(center);
+
+                camera.updateProjectionMatrix();
+
                 initRecorder();
             };
             reader.readAsText(asset);

@@ -19,6 +19,7 @@ function App() {
         },
         onDropAccepted: (files, event) => setUploadedFile(files[0]),
     });
+
     return (
         <div className="App">
             <Box
